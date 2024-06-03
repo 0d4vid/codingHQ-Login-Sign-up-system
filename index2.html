@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Page</title>
+    <link rel="stylesheet" href="style/style.css">
+    <script type="module" src="script.js" defer></script>
+
+</head>
+
+<body>
+    <div class="main">
+        
+        <form action="./verification.php" method="post">
+            <h1>Register</h1>
+            <div class="maininput">
+                <input type="text" name="fname" id="name" placeholder="Enter Your Name" required>
+            </div>
+            
+            
+           
+            <div class="maininput">
+                <input type="email" id="email" name="email" placeholder="Enter Email" class="Ei" required>
+            </div>
+            <div class="maininput">
+                <input name="fnum" type="number" id="phone" placeholder="Enter Your Phone number: +237..." class="Pi" required>
+            </div>
+            
+            
+            <div class="maininput">
+                <input type="password" name="password" id="password" placeholder="Enter Password" required>
+            </div>
+            <div class="maininput">
+                <p>Verify With : <br> </p>
+                <select class="btn2" name="options" id="o">
+                    <option value="fnum">phone number</option>
+                    <option value="email">Email</option>
+                </select>
+            </div>
+            <button id="submit" type="submit" class="btn">Register</button>
+            <div class="mainrg">
+                <p>Already have an account? <a href="index3.html">Login</a></p>
+            </div>
+        </form>
+    </div>
+   
+    
+</body>
+
+</html>
